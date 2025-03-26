@@ -355,7 +355,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368681184}
-  - component: {fileID: 1368681185}
   - component: {fileID: 1368681187}
   m_Layer: 0
   m_Name: Face Detection
@@ -379,30 +378,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1368681185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368681182}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 196e4a59a858ef540a0deb267d7b55f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facePreviews:
-  - {fileID: 5023127968907877657}
-  - {fileID: 1669040737}
-  - {fileID: 1120148651}
-  - {fileID: 194027925}
-  imagePreview: {fileID: 540288955}
-  imageTexture: {fileID: 2800000, guid: 404c3b5aff737a340b2344dfe42a2d4b, type: 3}
-  faceDetector: {fileID: 5022602860645237092, guid: df32e16c55d1f4868ae287f840b7f478, type: 3}
-  anchorsCSV: {fileID: 4900000, guid: 3e88456b82cc63d4b9237f1dc38bad6d, type: 3}
-  potatoTexture: {fileID: 2800000, guid: b2da498ebc52a6a4fb0de037839c52db, type: 3}
-  iouThreshold: 0.3
-  scoreThreshold: 0.5
 --- !u!114 &1368681187
 MonoBehaviour:
   m_ObjectHideFlags: 0

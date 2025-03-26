@@ -122,11 +122,11 @@ public class FaceDetectionToPotatoForWebCam : MonoBehaviour
             var boxSize = 2f * (boxTopRight_ImageSpace - box_ImageSpace);
             facePreviews[i].SetBoundingBox(true, ImageToWorld(box_ImageSpace), boxSize / texture.height);
 
-            for (var j = 0; j < k_NumKeypoints; j++)
-            {
-                var position_ImageSpace = BlazeUtils.mul(M, anchorPosition + new float2(outputBoxes[0, i, 4 + 2 * j + 0], outputBoxes[0, i, 4 + 2 * j + 1]));
-                facePreviews[i].SetKeypoint(j, true, ImageToWorld(position_ImageSpace));
-            }
+            // for (var j = 0; j < k_NumKeypoints; j++)
+            // {
+            //     var position_ImageSpace = BlazeUtils.mul(M, anchorPosition + new float2(outputBoxes[0, i, 4 + 2 * j + 0], outputBoxes[0, i, 4 + 2 * j + 1]));
+            //     facePreviews[i].SetKeypoint(j, true, ImageToWorld(position_ImageSpace));
+            // }
 
             // ジャガイモの画像を表示
             var potatoPosition = ImageToWorld(box_ImageSpace);
